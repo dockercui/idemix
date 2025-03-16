@@ -109,7 +109,7 @@ func (m *IdemixMSPConfig) GetCurveId() string {
 	return ""
 }
 
-// IdemixMSPSIgnerConfig contains the crypto material to set up an idemix signing identity
+// IdemixMSPSignerConfig contains the crypto material to set up an idemix signing identity
 type IdemixMSPSignerConfig struct {
 	// cred represents the serialized idemix credential of the default signer
 	Cred []byte `protobuf:"bytes,1,opt,name=cred,proto3" json:"cred,omitempty"`
