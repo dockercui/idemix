@@ -116,7 +116,7 @@ func (i *Issuer) NewKey(AttributeNames []string) (types.IssuerSecretKey, error) 
 	}, nil
 }
 
-// NewPublicKeyFromBytes converts the passed bytes to an Issuer key
+// NewKeyFromBytes converts the passed bytes to an Issuer key
 // It makes sure that the so obtained  key has the passed attributes, if specified
 func (i *Issuer) NewKeyFromBytes(raw []byte, attributes []string) (types.IssuerSecretKey, error) {
 	SK, err := bbs.NewBBSLib(i.Curve).UnmarshalPrivateKey(raw)

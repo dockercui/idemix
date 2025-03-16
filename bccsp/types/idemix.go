@@ -37,7 +37,7 @@ type Issuer interface {
 	// NewKey generates a new idemix issuer key w.r.t the passed attribute names.
 	NewKey(AttributeNames []string) (IssuerSecretKey, error)
 
-	// NewPublicKeyFromBytes converts the passed bytes to an Issuer key
+	// NewKeyFromBytes converts the passed bytes to an Issuer key
 	// It makes sure that the so obtained  key has the passed attributes, if specified
 	NewKeyFromBytes(raw []byte, attributes []string) (IssuerSecretKey, error)
 
